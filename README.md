@@ -19,6 +19,8 @@ Radar Odometry Path:
 Ubuntu 16
 ROS Kinetic
 OpenCV 3.3.1
+C++14
+Python2.7
 ```
 
 # Getting Started
