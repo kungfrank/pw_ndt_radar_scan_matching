@@ -16,14 +16,15 @@ Radar Odometry Result:
 
 # Getting Started
 
-### Download Oxford RobotCar Dataset
+### Download Oxford Radar RobotCar Dataset
 You can download the dataset from:
+https://oxford-robotics-institute.github.io/radar-robotcar-dataset/
 
 ### Generate Cartesian radar images and ground truth odometry files
 
 Replace 'path' in script/oxford_gen_gt_file.py with the path of your dataset, then run:
 ```
-python radar_polar_to_cart_png.py
+python script/radar_polar_to_cart_png.py
 ```
 
 Replace the *oxford_data_path* in script/oxford_gen_gt_file.py file, then run:
