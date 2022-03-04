@@ -1,18 +1,25 @@
 # pw_ndt_radar_scan_matching
 
 The implementation of scanning radar scan matching proposed in ["A Normal Distribution Transform-Based Radar Odometry Designed For Scanning and Automotive Radars
-"](https://arxiv.org/abs/2103.07908) , accepted for publication in the IEEE ICRA 2021. This repo is a ROS package. Please place it in a catkin workspace to build and run the code.
+"](https://arxiv.org/abs/2103.07908) , accepted for publication in the IEEE ICRA 2021. This repo is a [ROS](http://wiki.ros.org/action/fullsearch/noetic/Installation/Ubuntu?action=fullsearch&context=180&value=linkto%3A%22noetic%2FInstallation%2FUbuntu%22) package. Please place it in a [catkin workspace](http://wiki.ros.org/catkin/Tutorials/create_a_workspace) to build and run the code.
 
 ### [Important] 
 
 The result of this code is not the same as the original paper because we change the optimization method in NDT to improve the robustness of scan matching. The PW-NDT can now be used without failure detection based on vehicle acceleration constrain. Therefore, the code we provided has removed the complex rule for failure detection used in the origin paper.
 
-## Radar Odometry on Oxford Radar RobotCar Dataset:
+## Radar Odometry on Oxford Radar RobotCar Dataset
 ![](img/scanning_ro.gif)
 
 Radar Odometry Path:
 
 <img src="img/path1.png" alt="drawing" style="width:600px;"/>
+
+## Testing Environment
+```
+Ubuntu 16
+ROS Kinetic
+OpenCV 3.3.1
+```
 
 # Getting Started
 
@@ -41,11 +48,11 @@ catkin build pw_ndt_radar_scan_matching
 ### Launch the Code
 Replace parameters: */directory*, */gt_directory*, and */save_directory* with you path.
 
-*/directory*: path of data
-
-*/gt_directory*: path of ground truth file
-
-*/save_directory*: path to save result
+```
+/directory: path of data
+/gt_directory: path of ground truth file
+/save_directory: path to save result
+```
 
 Run the code:
 ```
