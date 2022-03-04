@@ -1,0 +1,371 @@
+Panels:
+  - Class: rviz/Displays
+    Help Height: 0
+    Name: Displays
+    Property Tree Widget:
+      Expanded:
+        - /TF1/Frames1
+        - /Odometry1/Shape1
+        - /Odometry2/Shape1
+        - /MarkerArray1/Status1
+      Splitter Ratio: 0.588888884
+    Tree Height: 921
+  - Class: rviz/Selection
+    Name: Selection
+  - Class: rviz/Tool Properties
+    Expanded:
+      - /2D Pose Estimate1
+      - /2D Nav Goal1
+      - /Publish Point1
+    Name: Tool Properties
+    Splitter Ratio: 0.588679016
+  - Class: rviz/Views
+    Expanded:
+      - /Current View1
+    Name: Views
+    Splitter Ratio: 0.5
+  - Class: rviz/Time
+    Experimental: true
+    Name: Time
+    SyncMode: 0
+    SyncSource: PointCloud2
+Toolbars:
+  toolButtonStyle: 2
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Alpha: 0.300000012
+      Cell Size: 5
+      Class: rviz/Grid
+      Color: 255; 255; 255
+      Enabled: false
+      Line Style:
+        Line Width: 0.0299999993
+        Value: Lines
+      Name: Grid
+      Normal Cell Count: 0
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Plane: XY
+      Plane Cell Count: 64
+      Reference Frame: res_odom
+      Value: false
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 10000
+      Frames:
+        All Enabled: false
+        gt_odom:
+          Value: false
+        origin:
+          Value: true
+        res_odom:
+          Value: true
+      Marker Scale: 10
+      Name: TF
+      Show Arrows: false
+      Show Axes: true
+      Show Names: true
+      Tree:
+        origin:
+          gt_odom:
+            {}
+          res_odom:
+            {}
+      Update Interval: 0
+      Value: true
+    - Class: rviz/Axes
+      Enabled: true
+      Length: 5
+      Name: Axes
+      Radius: 1
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz/Group
+      Displays:
+        - Alpha: 0.5
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 129
+            Min Value: 71
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 24; 255; 31
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Max Intensity: 135.96875
+          Min Color: 0; 0; 0
+          Min Intensity: 10
+          Name: PointCloud2
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 5
+          Size (m): 0.125
+          Style: Flat Squares
+          Topic: /radar_odometry/radar_odometry/vis/new_pc
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: false
+          Value: true
+        - Alpha: 0.5
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 135
+            Min Value: 71
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 255; 0; 0
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Max Intensity: 135.96875
+          Min Color: 0; 0; 0
+          Min Intensity: 10
+          Name: PointCloud2
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 5
+          Size (m): 0.125
+          Style: Flat Squares
+          Topic: /radar_odometry/radar_odometry/vis/out_pc
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: false
+          Value: true
+        - Alpha: 1
+          Autocompute Intensity Bounds: true
+          Autocompute Value Bounds:
+            Max Value: 136
+            Min Value: 71
+            Value: true
+          Axis: Z
+          Channel Name: intensity
+          Class: rviz/PointCloud2
+          Color: 37; 102; 255
+          Color Transformer: FlatColor
+          Decay Time: 0
+          Enabled: true
+          Invert Rainbow: false
+          Max Color: 255; 255; 255
+          Max Intensity: 135.96875
+          Min Color: 0; 0; 0
+          Min Intensity: 10
+          Name: PointCloud2
+          Position Transformer: XYZ
+          Queue Size: 10
+          Selectable: true
+          Size (Pixels): 5
+          Size (m): 0.125
+          Style: Flat Squares
+          Topic: /radar_odometry/radar_odometry/vis/old_pc
+          Unreliable: false
+          Use Fixed Frame: true
+          Use rainbow: false
+          Value: true
+      Enabled: false
+      Name: Scan matching viz
+    - Alpha: 1
+      Autocompute Intensity Bounds: false
+      Autocompute Value Bounds:
+        Max Value: 136
+        Min Value: 71
+        Value: true
+      Axis: Z
+      Channel Name: intensity
+      Class: rviz/PointCloud2
+      Color: 37; 102; 255
+      Color Transformer: Intensity
+      Decay Time: 0
+      Enabled: true
+      Invert Rainbow: false
+      Max Color: 255; 255; 255
+      Max Intensity: 250
+      Min Color: 0; 0; 0
+      Min Intensity: 0
+      Name: PointCloud2
+      Position Transformer: XYZ
+      Queue Size: 10
+      Selectable: true
+      Size (Pixels): 5
+      Size (m): 0.125
+      Style: Flat Squares
+      Topic: /radar_odometry/radar_odometry/vis/new_pc
+      Unreliable: false
+      Use Fixed Frame: true
+      Use rainbow: false
+      Value: true
+    - Alpha: 1
+      Buffer Length: 1
+      Class: rviz/Path
+      Color: 255; 15; 59
+      Enabled: true
+      Head Diameter: 0.300000012
+      Head Length: 0.200000003
+      Length: 0.300000012
+      Line Style: Lines
+      Line Width: 0.0299999993
+      Name: Path
+      Offset:
+        X: 0
+        Y: 0
+        Z: 0
+      Pose Color: 255; 85; 255
+      Pose Style: None
+      Radius: 0.0299999993
+      Shaft Diameter: 0.100000001
+      Shaft Length: 0.100000001
+      Topic: /radar_odometry/radar_odometry/vis/gt_path
+      Unreliable: false
+      Value: true
+    - Angle Tolerance: 0.100000001
+      Class: rviz/Odometry
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 0.300000012
+          Color: 204; 51; 204
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: true
+      Keep: 1
+      Name: Odometry
+      Position Tolerance: 0.100000001
+      Shape:
+        Alpha: 1
+        Axes Length: 1
+        Axes Radius: 0.100000001
+        Color: 255; 25; 0
+        Head Length: 0.699999988
+        Head Radius: 1
+        Shaft Length: 0.699999988
+        Shaft Radius: 1
+        Value: Arrow
+      Topic: /radar_odometry/radar_odometry/vis/gt_pose
+      Unreliable: false
+      Value: true
+    - Angle Tolerance: 0.100000001
+      Class: rviz/Odometry
+      Covariance:
+        Orientation:
+          Alpha: 0.5
+          Color: 255; 255; 127
+          Color Style: Unique
+          Frame: Local
+          Offset: 1
+          Scale: 1
+          Value: true
+        Position:
+          Alpha: 0.300000012
+          Color: 204; 51; 204
+          Scale: 1
+          Value: true
+        Value: true
+      Enabled: true
+      Keep: 10000
+      Name: Odometry
+      Position Tolerance: 0.100000001
+      Shape:
+        Alpha: 1
+        Axes Length: 1
+        Axes Radius: 0.100000001
+        Color: 35; 255; 86
+        Head Length: 0.699999988
+        Head Radius: 0.699999988
+        Shaft Length: 0.699999988
+        Shaft Radius: 0.699999988
+        Value: Arrow
+      Topic: /radar_odometry/radar_odometry/vis/res_pose
+      Unreliable: false
+      Value: true
+    - Class: rviz/MarkerArray
+      Enabled: false
+      Marker Topic: /radar_odometry/radar_odometry/vis/ndmap
+      Name: MarkerArray
+      Namespaces:
+        {}
+      Queue Size: 100
+      Value: false
+  Enabled: true
+  Global Options:
+    Background Color: 33; 33; 33
+    Default Light: true
+    Fixed Frame: origin
+    Frame Rate: 30
+  Name: root
+  Tools:
+    - Class: rviz/Interact
+      Hide Inactive Objects: true
+    - Class: rviz/MoveCamera
+    - Class: rviz/Select
+    - Class: rviz/FocusCamera
+    - Class: rviz/Measure
+    - Class: rviz/SetInitialPose
+      Topic: /initialpose
+    - Class: rviz/SetGoal
+      Topic: /move_base_simple/goal
+    - Class: rviz/PublishPoint
+      Single click: true
+      Topic: /clicked_point
+  Value: true
+  Views:
+    Current:
+      Class: rviz/ThirdPersonFollower
+      Distance: 124.227768
+      Enable Stereo Rendering:
+        Stereo Eye Separation: 0.0599999987
+        Stereo Focal Distance: 1
+        Swap Stereo Eyes: false
+        Value: false
+      Focal Point:
+        X: -20.5156288
+        Y: -1.89811003
+        Z: 0
+      Focal Shape Fixed Size: true
+      Focal Shape Size: 0.0500000007
+      Invert Z Axis: false
+      Name: Current View
+      Near Clip Distance: 0.00999999978
+      Pitch: 1.56979632
+      Target Frame: res_odom
+      Value: ThirdPersonFollower (rviz)
+      Yaw: 3.11539936
+    Saved: ~
+Window Geometry:
+  Displays:
+    collapsed: false
+  Height: 1056
+  Hide Left Dock: false
+  Hide Right Dock: true
+  QMainWindow State: 000000ff00000000fd00000004000000000000016a000003dafc0200000027fb0000000a0049006d00610067006500000000280000004e0000000000000000fb0000001200530065006c0065006300740069006f006e0000000028000001d90000006100fffffffb0000001e0054006f006f006c002000500072006f007000650072007400690065007302000001ed000001df00000185000000a3fb000000120056006900650077007300200054006f006f02000001df000002110000018500000122fb000000200054006f006f006c002000500072006f0070006500720074006900650073003203000002880000011d000002210000017afc00000028000003da000000d700fffffffa000000020100000003fb0000000a0049006d0061006700650000000000ffffffff0000000000000000fb0000000a0049006d0061006700650000000000ffffffff0000000000000000fb000000100044006900730070006c0061007900730100000000000002770000016a00fffffffb0000000a0049006d00610067006502000009bf000002ab0000017f0000018dfb0000000a0049006d0061006700650000000185000000380000000000000000fb0000000a0049006d006100670065000000019d0000001b0000000000000000fb0000002000730065006c0065006300740069006f006e00200062007500660066006500720200000138000000aa0000023a00000294fb00000014005700690064006500530074006500720065006f02000000e6000000d2000003ee0000030bfb0000000c004b0069006e0065006300740200000186000001060000030c00000261fb0000000a0049006d0061006700650200000564000000c7000001f50000014ffb0000000a0049006d00610067006500000002be000001440000000000000000fb0000000a0049006d00610067006500000001b8000000520000000000000000fb0000000a0049006d00610067006500000001df000000c80000000000000000fb0000000a0049006d0061006700650200000000000002df000001df00000022fb0000000a0049006d0061006700650000000252000001b00000000000000000fb0000000a0049006d00610067006501000002e8000000d60000000000000000fb0000000a0049006d00610067006501000002f4000000ca0000000000000000fb0000000a0049006d006100670065030000001d0000025c000002670000016ffb0000000a0049006d006100670065010000021c0000017d0000000000000000fb0000000a0049006d0061006700650100000255000001440000000000000000fb0000000a0049006d00610067006501000002cf000000ca0000000000000000fb0000000a0049006d0061006700650100000212000001170000000000000000fb0000000a0049006d006100670065010000032f000000ce0000000000000000fb0000000a0049006d0061006700650300000013000001790000013900000149fb0000000a0049006d006100670065030000064b0000016d0000013200000149fb0000000a0049006d006100670065010000032e000000cf0000000000000000fb0000000a0049006d0061006700650300000163000002cb0000016900000173fb0000000a0049006d006100670065010000030b000000f50000000000000000fb0000000a0049006d006100670065030000059e0000012e000001b600000250fb0000000a0049006d0061006700650100000277000001890000000000000000fb0000000a0049006d00610067006503000002a600000179000001ee000001f5fb0000000a0049006d00610067006503000003bc00000037000001b900000175fb0000000a0049006d006100670065030000049b00000176000001e9000001fafb0000000a0049006d006100670065000000028d000000a20000000000000000fb0000000a0049006d006100670065000000030b000000f70000000000000000fb0000000c00430061006d00650072006101000003ec0000001600000000000000000000000100000196000003dafc0200000006fc00000028000003da0000000000fffffffa000000000100000002fb0000000a0049006d0061006700650000000000ffffffff0000000000000000fb0000000a0056006900650077007300000005ab000001960000010f00fffffffb0000000a0049006d006100670065000000025a000001a60000000000000000fb0000001e0054006f006f006c002000500072006f00700065007200740069006500730100000041000000780000000000000000fb0000000a0049006d0061006700650100000028000000f30000000000000000fc0000002b000001860000000000fffffffa000000000100000001fb0000000a0049006d0061006700650000000000ffffffff0000000000000000fb0000001200530065006c0065006300740069006f006e010000025a000000b20000000000000000000000020000036b000000b2fc0100000001fb0000000a00560069006500770073030000004e00000080000002e100000197000000030000074100000153fc0100000002fb0000000800540069006d00650000000000000007800000032700fffffffb0000000800540069006d00650100000000000004500000000000000000000005d1000003da00000004000000040000000800000008fc0000000100000002000000010000000a0054006f006f006c00730100000000ffffffff0000000000000000
+  Selection:
+    collapsed: false
+  Time:
+    collapsed: false
+  Tool Properties:
+    collapsed: false
+  Views:
+    collapsed: true
+  Width: 1857
+  X: 1983
+  Y: 24

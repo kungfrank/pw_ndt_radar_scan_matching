@@ -16,7 +16,7 @@
       <param name="/global_mask_flag" value="0" />
       <param name="/global_viz" value="0" />
       <param name="/save_res" value="1" />
-      <param name="/res_file_name" value="_res_new.txt" />
+      <param name="/res_file_name" value="_res.txt" />
 
       <!-- Threshold and power shifting parameters -->
       <param name="/global_threshold" value="70" />
