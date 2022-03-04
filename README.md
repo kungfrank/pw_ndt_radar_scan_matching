@@ -5,7 +5,7 @@ The implementation of scanning radar scan matching proposed in ["A Normal Distri
 
 ### [Important] 
 
-The result of this code is not same as the original paper becasue we change the optimization method in NDT to improve the robustness of scan matching. The PW-NDT can now be used without failure detection based on vehicle acceleration constrain. Therefore, the code we provided have removed complex rule for failure detection used in the origin paper.
+The result of this code is not the same as the original paper because we change the optimization method in NDT to improve the robustness of scan matching. The PW-NDT can now be used without failure detection based on vehicle acceleration constrain. Therefore, the code we provided has removed the complex rule for failure detection used in the origin paper.
 
 ## Radar Odometry on Oxford RobotCar Radar Dataset:
 ![](img/scanning_ro.gif)
