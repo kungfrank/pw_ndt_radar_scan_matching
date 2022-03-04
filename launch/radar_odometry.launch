@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+
+<launch>
+
+  <node pkg="scanning_radar_scan_matching" type="radar_scan_matching" name="radar_odometry" output="screen" ns="radar_odometry" clear_params="true">
+
+      <!-- radar data path -->
+      <param name="/directory" value= "/mnt/Disk2/Oxford_radar/radar_cart_0.125_1001_timestamped/part1" />
+      <param name="/gt_directory" value= "/home/joinet/radar_ws/src/scanning_radar_scan_matching/kitti_eval/devkit_for_oxford/cpp/data/odometry/poses" />
+      <param name="/save_directory" value= "/home/joinet/radar_ws/src/scanning_radar_scan_matching/kitti_eval/devkit_for_oxford/cpp/results/result/data" />
+      <!--
+      <param name="/init_directory" value= "/home/joinet/radar_ws/src/scanning_radar_scan_matching/kitti_eval/devkit_for_oxford/cpp/results/result/data" />
+      -->
+      <!-- <param name="/bag_name" value= "2019-01-10-11-46-21-radar-oxford-10k" /> -->
+
+      <param name="/global_mask_flag" value="0" />
+      <param name="/global_viz" value="0" />
+      <param name="/save_res" value="1" />
+      <param name="/res_file_name" value="_res_new.txt" />
+
+      <!-- Threshold and power shifting parameters -->
+      <param name="/global_threshold" value="70" />
+      <param name="/global_bias" value="70" />
+
+      <!-- PW-NDT parameters -->
+      <param name="/grid_size1" value="9" />
+      <param name="/grid_size2" value="6" />
+      <param name="/grid_size3" value="4" />
+      <param name="/eps1" value="0.003" />
+      <param name="/eps2" value="0.003" />
+      <param name="/eps3" value="0.0003" />
+      <param name="/max_step_size1" value="0.03" />
+      <param name="/max_step_size2" value="0.02" />
+      <param name="/max_step_size3" value="0.01" />
+
+      <!-- Starting index -->
+      <param name="/start_index" value="0" />
+
+	</node>
+
+</launch>
