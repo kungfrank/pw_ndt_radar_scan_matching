@@ -2,14 +2,14 @@
 
 <launch>
 
-  <node pkg="scanning_radar_scan_matching" type="radar_scan_matching" name="radar_odometry" output="screen" ns="radar_odometry" clear_params="true">
+  <node pkg="pw_ndt_radar_scan_matching" type="radar_scan_matching" name="radar_odometry" output="screen" ns="radar_odometry" clear_params="true">
 
       <!-- radar data path -->
       <param name="/directory" value= "/mnt/Disk2/Oxford_radar/radar_cart_0.125_1001_timestamped/part1" />
-      <param name="/gt_directory" value= "/home/joinet/radar_ws/src/scanning_radar_scan_matching/kitti_eval/devkit_for_oxford/cpp/data/odometry/poses" />
-      <param name="/save_directory" value= "/home/joinet/radar_ws/src/scanning_radar_scan_matching/kitti_eval/devkit_for_oxford/cpp/results/result/data" />
+      <param name="/gt_directory" value= "/home/joinet/radar_ws/src/pw_ndt_radar_scan_matching/kitti_eval/devkit_for_oxford/cpp/data/odometry/poses" />
+      <param name="/save_directory" value= "/home/joinet/radar_ws/src/pw_ndt_radar_scan_matching/kitti_eval/devkit_for_oxford/cpp/results/result/data" />
       <!--
-      <param name="/init_directory" value= "/home/joinet/radar_ws/src/scanning_radar_scan_matching/kitti_eval/devkit_for_oxford/cpp/results/result/data" />
+      <param name="/init_directory" value= "/home/joinet/radar_ws/src/pw_ndt_radar_scan_matching/kitti_eval/devkit_for_oxford/cpp/results/result/data" />
       -->
       <!-- <param name="/bag_name" value= "2019-01-10-11-46-21-radar-oxford-10k" /> -->
 

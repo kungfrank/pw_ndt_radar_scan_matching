@@ -26,9 +26,9 @@
 #include <sys/types.h>
 #include <dirent.h>
 
-#include "../include/scanning_radar_scan_matching/ellipse.cc"
-#include "../include/scanning_radar_scan_matching/pw_ndt.h"
-#include "../include/scanning_radar_scan_matching/ndt.h"
+#include "../include/pw_ndt_radar_scan_matching/ellipse.cc"
+#include "../include/pw_ndt_radar_scan_matching/pw_ndt.h"
+#include "../include/pw_ndt_radar_scan_matching/ndt.h"
 
 using namespace std;
 using namespace cv;
