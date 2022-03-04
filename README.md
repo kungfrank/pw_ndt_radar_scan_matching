@@ -33,18 +33,18 @@ https://oxford-robotics-institute.github.io/radar-robotcar-dataset/
 
 Replace 'path' in script/oxford_gen_gt_file.py with the path of your dataset, then run:
 ```
-python script/radar_polar_to_cart_png.py
+$ python script/radar_polar_to_cart_png.py
 ```
 
 Replace the *oxford_data_path* in script/oxford_gen_gt_file.py file, then run:
 ```
-python script/oxford_gen_gt_file.py
+$ python script/oxford_gen_gt_file.py
 ```
 
 ### Compile the Package
 ```
-cd ..
-catkin build pw_ndt_radar_scan_matching
+$ cd ..
+$ catkin build pw_ndt_radar_scan_matching
 ```
 
 ### Launch the Code
@@ -58,7 +58,7 @@ Replace parameters: */directory*, */gt_directory*, and */save_directory* in src/
 
 Run the code:
 ```
-roslaunch pw_ndt_radar_scan_matching radar_odometry.launch
+$ roslaunch pw_ndt_radar_scan_matching radar_odometry.launch
 ```
 You should see something like the following:
 ```
@@ -86,7 +86,7 @@ You should see something like the following:
 
 ### Visualize the result in rviz
 ```
-rviz
+$ rosrun rviz rviz -d config/rviz_config.rviz
 ```
 Topics:
 ```
@@ -107,9 +107,9 @@ Normal Distribution Map Visualization:
 with all ground truth files in './kitti_eval/devkit_for_oxford/cpp/data/odometry/poses' and result files in './kitti_eval/devkit_for_oxford/cpp/results/result/data' run following commands to evaluate the odometry performance.
 
 ```
-cd kitti_eval/devkit_for_oxford/cpp
-g++ -O3 -DNDEBUG -o evaluate_odometry evaluate_odometry.cpp matrix.cpp
-./evaluate_odometry result
+$ cd kitti_eval/devkit_for_oxford/cpp
+$ g++ -O3 -DNDEBUG -o evaluate_odometry evaluate_odometry.cpp matrix.cpp
+$ ./evaluate_odometry result
 ```
 You will see the result with number in stats.txt and plot in /plot_path
 
