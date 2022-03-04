@@ -46,7 +46,7 @@ catkin build pw_ndt_radar_scan_matching
 ```
 
 ### Launch the Code
-Replace parameters: */directory*, */gt_directory*, and */save_directory* with you path.
+Replace parameters: */directory*, */gt_directory*, and */save_directory* in src/radar_odometry.launch file with your path.
 
 ```
 /directory: path of data
@@ -58,7 +58,7 @@ Run the code:
 ```
 roslaunch pw_ndt_radar_scan_matching radar_odometry.launch
 ```
-You should see some thing like following:
+You should see something like the following:
 ```
 -----------------------------------
 [Index]: 2714 t:678.168
