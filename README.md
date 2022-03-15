@@ -31,7 +31,19 @@ https://oxford-robotics-institute.github.io/radar-robotcar-dataset/
 
 ### Generate Cartesian radar images and ground truth odometry files
 
-Replace 'path' in script/oxford_gen_gt_file.py with the path of your dataset, then run:
+Replace 'path' in script/oxford_gen_gt_file.py with the path of your dataset. The directory of the path should be like the following structure. 
+
+```
+--- 2019-01-10-11-46-21-radar-oxford-10k
+|   |_ gps
+|   |_ gt
+|   |_ radar
+---  2019-01-10-12-32-52-radar-oxford-10k
+|   |_ gps
+|   |_ gt
+|   |_ radar
+```
+Then run:
 ```
 $ python script/radar_polar_to_cart_png.py
 ```
