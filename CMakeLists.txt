@@ -51,5 +51,5 @@ include_directories(
 include_directories(${OpenCV_INCLUDE_DIRS})
 
 add_executable(radar_scan_matching src/radar_scan_matching.cpp)
-target_link_libraries(radar_scan_matching ${catkin_LIBRARIES} ${OpenCV_LIBS})
+target_link_libraries(radar_scan_matching ${catkin_LIBRARIES} ${OpenCV_LIBS} pcl_visualization)
 
